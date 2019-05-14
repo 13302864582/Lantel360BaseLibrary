@@ -1,0 +1,34 @@
+<resources>
+    <!-- 环形菜单 -->
+    <dimen name="min_height">160dp</dimen>
+    <dimen name="big_circle_radius">40dp</dimen>
+    <dimen name="small_circle_radius">20dp</dimen>
+    <dimen name="min_gap">80dp</dimen>
+
+    <!--左右小图标宽高，左右边距，顶部边距-->
+    <dimen name="statebar_height">24dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="top_img_width">24dp</dimen>
+    <dimen name="top_img_height">24dp</dimen>
+    <dimen name="top_img_marginHorizontal">19dp</dimen>
+    <dimen name="top_img_margin_top">34dp</dimen>
+
+    <!--消息红点，大小，边距-->
+    <dimen name="redpoint_radis">4dp</dimen>
+    <dimen name="top_redpointmarginLeft">39dp</dimen>
+    <dimen name="top_redpointmarginTop">16dp</dimen>
+
+
+    <!--顶部标题-->
+    <dimen name="top_title">18sp</dimen>
+    <dimen name="top_txt_right">14sp</dimen>
+
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="image_text_default">12sp</dimen>
+    <dimen name="imgText_title">12sp</dimen>
+    <dimen name="imgText_icon">7dp</dimen>
+    <dimen name="img_text">5sp</dimen>
+
+    <dimen name="curriculum_item_margin_big">16dp</dimen>
+    <dimen name="curriculum_item_margin_small">8dp</dimen>
+</resources>

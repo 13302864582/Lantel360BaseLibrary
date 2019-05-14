@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">BaseLibrary</string>
+
+    <string name="save">保存</string>
+    <string name="confirm">确认</string>
+
+
+    <!--===========================================================跳转路径================================================================-->
+
+    <!--模块：主页   菜单跳转路径-->
+    <string name="home_curriculum_path" >/lantel/360/curriculum</string>
+    <string name="home_attence_path" >/lantel/360/attence</string>
+    <string name="home_homework_path" >/lantel/360/homework</string>
+    <string name="home_assessment_path" >/lantel/360/assessment</string>
+    <string name="home_book_path" >/lantel/360/book</string>
+    <string name="home_notify_path" >/lantel/360/notify</string>
+    <string name="home_output_path" >/lantel/360/output</string>
+    <string name="home_credit_path" >/lantel/360/credit</string>
+    <!--模块：学习   菜单跳转路径-->
+    <string name="study_course_path" >/lantel/360/course</string>
+    <string name="study_class_path" >/lantel/360/class</string>
+    <string name="study_preview_path" >/lantel/360/preview</string>
+    <string name="study_appointment_path" >/lantel/360/appointment</string>
+
+    <!--模块：我的   菜单跳转路径-->
+    <string name="mine_invite_path" >/lantel/360/invite</string>
+    <string name="mine_wallet_path" >/lantel/360/wallet</string>
+    <string name="mine_order_path" >/lantel/360/order</string>
+    <string name="mine_feedback_path" >/lantel/360/feedback</string>
+    <string name="cancel">取消</string>
+</resources>

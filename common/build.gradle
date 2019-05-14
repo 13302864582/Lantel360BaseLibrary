@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    //appcompact依赖
+    api rootProject.ext.dependencies.appcompat
+    api rootProject.ext.dependencies.constraintlayout
+
+    //ButterKnife依赖
+    api rootProject.ext.dependencies.butterknife
+    annotationProcessor rootProject.ext.dependencies.butterknifecompiler
+
+    api rootProject.ext.dependencies.lifecycle //生命周期依赖
+
+    api rootProject.ext.dependencies.modulebus   //组件通信
+
+    api rootProject.ext.dependencies.material   //材料设计,BottomNavigationView
+
+    api rootProject.ext.dependencies.arouter  //组件跳转
+
+    api rootProject.ext.dependencies.permission //权限
+
+    api project(':httpsdk') //网络模块
+
+    //api project(':GreenDaoSDK')
+
+    api rootProject.ext.dependencies.navigationFragment//底部导航
+    api rootProject.ext.dependencies.navigationUi
+
+    api rootProject.ext.dependencies.immersionbar //状态栏
+
+    api rootProject.ext.dependencies.glide //图片
+
+    api rootProject.ext.dependencies.qiniu // 七牛云上传
+
+    api 'com.contrarywind:Android-PickerView:4.1.8' //滚轮控件
+
+    //1.1.0 androidx 版本,SmartRefreshLayout,下拉刷新、上拉加载
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-4'
+    api 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-andx-4'
+
+    api 'com.afollestad.material-dialogs:core:0.9.6.0'
+}
+

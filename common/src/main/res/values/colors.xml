@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="translucent">#00000000</color>
+
+    <!--环形菜单-->
+    <color name="default_color">#02a6d8</color>
+    <color name="default_color_dark">#52a6b8</color>
+    <color name="color_red">#FF0000</color>
+
+
+    <color name="top_txt_right">#49a2f8</color>
+
+    <color name="edit_color">#00d16e</color>
+    <color name="edit_txt_color">#3e3e3e</color>
+    <color name="edit_tip_color">#a8a8a8</color>
+    <color name="imgText_title">#787878</color>
+</resources>

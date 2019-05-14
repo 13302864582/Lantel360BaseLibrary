@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner rootProject.ext.android.testInstrumentationRunner
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api rootProject.ext.dependencies.rxjava  // 必要rxjava2依赖
+
+    api rootProject.ext.dependencies.rxandroid  // 必要rxandrroid依赖，切线程时需要用到
+
+    api rootProject.ext.dependencies.retrofit   // 必要retrofit依赖
+
+    api rootProject.ext.dependencies.adapterRxjava  // 必要依赖，和Rxjava结合必须用到，下面会提到
+
+    api rootProject.ext.dependencies.converterGson  // 必要依赖，解析json字符所用
+
+    api rootProject.ext.dependencies.rxlifecycle // rxlifecycle依赖
+}
