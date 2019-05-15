@@ -168,8 +168,11 @@ public class GlideUtils {
                 .placeholder(defRes)
                 .centerCrop()
                 .diskCacheStrategy(DiskCacheStrategy.ALL);
+
                 if(withSolid){
                     options.transform(new GlideCircleWithBorder(3, color));
+                }else {
+                    options.transform(new GlideCircleWithBorder());
                 }
         Glide.with(context).load(path)
                 .apply(options)
